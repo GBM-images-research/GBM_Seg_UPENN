@@ -1,4 +1,4 @@
-# GBM_Seg_ResNet
+# GBM_Seg_UPENN
 
 Tumor segmentation source code
 
