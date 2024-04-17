@@ -257,7 +257,7 @@ wandb.login(key=api_key)
 # Load DATASET and training modelo #
 ####################################
 def main(config_train):
-    dataset_path = "D:\\CIA_UPENN_GBM\Dataset_new"
+    dataset_path = "/home/psalmon/SegResNet-UPENN/Dataset_new"
 
     train_set = CustomDataset(
         dataset_path, section="train", transform=t_transform
