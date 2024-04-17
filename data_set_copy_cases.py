@@ -30,23 +30,23 @@ def copiar_archivos(casos, ruta_original, ruta_destino, set_type):
         )
         print(f"Copiando {archivo_segm_origen} a {archivo_segm_destino}")
 
-    # Copiar archivos de images_structural a ./train/images
-    carpeta_origen = os.path.join(
-        ruta_original, "images_structural", f"UPENN-GBM-{str(caso).zfill(5)}_11"
-    )
-    carpeta_destino = os.path.join(
-        ruta_destino,
-        set_type,
-        "images",
-        "images_structural",
-        f"UPENN-GBM-{str(caso).zfill(5)}_11",
-    )
+        # Copiar archivos de images_structural a ./train/images
+        carpeta_origen = os.path.join(
+            ruta_original, "images_structural", f"UPENN-GBM-{str(caso).zfill(5)}_11"
+        )
+        carpeta_destino = os.path.join(
+            ruta_destino,
+            set_type,
+            "images",
+            "images_structural",
+            f"UPENN-GBM-{str(caso).zfill(5)}_11",
+        )
 
-    for archivo in os.listdir(carpeta_origen):
-        archivo_origen = os.path.join(carpeta_origen, archivo)
-        archivo_destino = os.path.join(carpeta_destino, archivo)
-        shutil.copy2(archivo_origen, archivo_destino)
-        print(f"Copiando {archivo} a {archivo_destino}")
+        for archivo in os.listdir(carpeta_origen):
+            archivo_origen = os.path.join(carpeta_origen, archivo)
+            archivo_destino = os.path.join(carpeta_destino, archivo)
+            shutil.copy2(archivo_origen, archivo_destino)
+            print(f"Copiando {archivo} a {archivo_destino}")
 
 
 # Definir casos y rutas
@@ -61,8 +61,8 @@ num_casos_validacion = total_casos - num_casos_entrenamiento
 todos_casos = list(range(1, total_casos + 1))
 
 # Seleccionar de forma aleatoria los casos para entrenamiento y validación
-casos_train = random.sample(todos_casos, num_casos_entrenamiento)
-casos_valid = [caso for caso in todos_casos if caso not in casos_train]
+casos_train = random.sample([caso for caso in todos_casos if caso != 509], num_casos_entrenamiento)
+casos_valid = random.sample([caso for caso in todos_casos if caso != 509], num_casos_validacion)
 
 print("Número de casos para entrenamiento:", len(casos_train))
 print("Número de casos para validación:", len(casos_valid))
