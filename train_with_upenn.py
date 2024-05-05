@@ -84,9 +84,9 @@ def expand_mask_3d_td(
     return torch.from_numpy(exterior_mask)
 
 
-class ConvertToMultiChannel(MapTransform):
+class ConvertToMultiChannelBasedOnBratsClassesd(MapTransform):
     """
-    Convert labels to multi channels based on UPENN classes:
+    Convert labels to multi channels based on brats classes:
     label 1 is necrosis
     label 2 is edema
     label 3 is activo
@@ -99,52 +99,15 @@ class ConvertToMultiChannel(MapTransform):
         d = dict(data)
         for key in self.keys:
             result = []
-
             # label 1 necro
-            necro = d[key] == 1
-            # result.append(necro)
-
-            # label 2 is Edema
-            edema = d[key] == 2
-            # result.append(edema)
-
+            result.append(d[key] == 1)
+            # label 2 is ET
+            result.append(d[key] == 2)
             # merge labels 3, 4 and 3 to construct activo
-            active = torch.logical_or(d[key] == 3, d[key] == 4)
-            # result.append(active)
-
-            # Determinar las ROI cercana y lejana al Tumor Core
-            tumor_core_mask = np.logical_or(necro, active)
-
-            # Rellenar los huecos en la máscara
-            filled_tumor_core = fill_holes_3d(tumor_core_mask)
-            # result.append(torch.from_numpy(filled_tumor_core))
-
-            # Definir el tamaño de voxel en centímetros (ajusta según tus datos)
-            voxel_size_cm = 0.1
-
-            # Expandir la máscara de 1 cm alrededor del tumor core (N_ROI)
-            N_roi = expand_mask_3d_td(
-                filled_tumor_core,
-                edema=edema,
-                distance_cm_max=0.5,
-                distance_cm_min=0.1,
-                voxel_size=voxel_size_cm,
-            )
-            result.append(N_roi)
-
-            F_roi = expand_mask_3d_td(
-                filled_tumor_core,
-                edema=edema,
-                distance_cm_max=10,
-                distance_cm_min=1,
-                voxel_size=voxel_size_cm,
-            )
-            result.append(F_roi)
-            # result.append(edema)
+            result.append(torch.logical_or(d[key] == 3, d[key] == 4))
 
             d[key] = torch.stack(result, axis=0).float()
         return d
-
 
 # Transformaciones
 t_transform = Compose(
