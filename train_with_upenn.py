@@ -123,21 +123,21 @@ t_transform = Compose(
             mode=("bilinear", "nearest"),
         ),
         NormalizeIntensityd(keys="image", nonzero=True, channel_wise=True),
-        '''
-        CropForegroundd(
-           keys=["image", "label"], source_key="label", margin=[112, 112, 72]
-        ),
-        RandSpatialCropd(
-            keys=["image", "label"], roi_size=[224, 224, 144], random_size=False
-        ),  # [224, 224, 144]
+    
+        #CropForegroundd(
+        #   keys=["image", "label"], source_key="label", margin=[112, 112, 72]
+        #),
+        #RandSpatialCropd(
+        #    keys=["image", "label"], roi_size=[224, 224, 144], random_size=False
+        #),  [224, 224, 144]
 
         #Data agumentation
-        RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=0),
-        RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=1),
-        RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=2),
-        RandScaleIntensityd(keys="image", factors=0.1, prob=1.0),
-        RandShiftIntensityd(keys="image", offsets=0.1, prob=1.0),
-        '''
+        #RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=0),
+        #RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=1),
+        #RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=2),
+        #RandScaleIntensityd(keys="image", factors=0.1, prob=1.0),
+        #RandShiftIntensityd(keys="image", offsets=0.1, prob=1.0),
+
     ]
 )
 
