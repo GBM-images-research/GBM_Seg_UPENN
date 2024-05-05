@@ -313,6 +313,7 @@ def main(config_train):
                 batch_data["image"].to(device),
                 batch_data["label"].to(device),
             )
+            print("Shape Inputs: ", inputs.shape)
             optimizer.zero_grad()
 
             if config_train.use_scaler:
