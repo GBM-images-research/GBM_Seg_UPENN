@@ -115,7 +115,7 @@ t_transform = Compose(
         LoadImaged(keys=["image", "label"], allow_missing_keys=True),
         EnsureChannelFirstd(keys="image"),
         EnsureTyped(keys=["image", "label"]),
-        ConvertToMultiChannel(keys="label"),
+        ConvertToMultiChannelBasedOnBratsClassesd(keys="label"),
         Orientationd(keys=["image", "label"], axcodes="RAS"),
         Spacingd(
             keys=["image", "label"],
@@ -146,7 +146,7 @@ v_transform = Compose(
         LoadImaged(keys=["image", "label"], allow_missing_keys=True),
         EnsureChannelFirstd(keys="image"),
         EnsureTyped(keys=["image", "label"]),
-        ConvertToMultiChannel(keys="label"),
+        ConvertToMultiChannelBasedOnBratsClassesd(keys="label"),
         Orientationd(keys=["image", "label"], axcodes="RAS"),
         Spacingd(
             keys=["image", "label"],
