@@ -195,7 +195,7 @@ def inference(input, model, VAL_AMP=config_train.use_autocast):
     def _compute(input):
         return sliding_window_inference(
             inputs=input,
-            roi_size=(240, 240, 155),
+            roi_size=(240, 240, 160),
             sw_batch_size=1,
             predictor=model,
             overlap=0.5,
