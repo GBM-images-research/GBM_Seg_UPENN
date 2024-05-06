@@ -127,9 +127,9 @@ t_transform = Compose(
         CropForegroundd(
            keys=["image", "label"], source_key="label", margin=[112, 112, 72]
         ),
-        #RandSpatialCropd(
-        #    keys=["image", "label"], roi_size=[224, 224, 144], random_size=False
-        #),  [224, 224, 144]
+        RandSpatialCropd(
+            keys=["image", "label"], roi_size=[224, 224, 144], random_size=False
+        ),  #[224, 224, 144]
 
         #Data agumentation
         #RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=0),
