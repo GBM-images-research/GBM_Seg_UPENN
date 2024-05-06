@@ -124,9 +124,9 @@ t_transform = Compose(
         ),
         NormalizeIntensityd(keys="image", nonzero=True, channel_wise=True),
     
-        #CropForegroundd(
-        #   keys=["image", "label"], source_key="label", margin=[112, 112, 72]
-        #),
+        CropForegroundd(
+           keys=["image", "label"], source_key="label", margin=[112, 112, 72]
+        ),
         #RandSpatialCropd(
         #    keys=["image", "label"], roi_size=[224, 224, 144], random_size=False
         #),  [224, 224, 144]
