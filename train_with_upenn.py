@@ -176,7 +176,7 @@ config_train = SimpleNamespace(
     # Train type
     use_scaler=True,
     use_autocast=True,
-    #GT="nroi + froi",
+    #GT="nroi + E",
 )
 
 
@@ -287,9 +287,9 @@ def main(config_train):
     best_metrics_epochs_and_time = [[], [], []]
     epoch_loss_values = []
     metric_values = []
-    metric_values_nroi = []  # tc nroi
-    metric_values_froi = []  # wt
-    metric_values_et = []
+    metric_values_N = []  # necrosis
+    metric_values_E = []  # edema
+    metric_values_TA = [] # enhancing tumor
 
     total_start = time.time()
     for epoch in range(max_epochs):
@@ -367,17 +367,19 @@ def main(config_train):
                 metric = dice_metric.aggregate().item()
                 metric_values.append(metric)
                 metric_batch = dice_metric_batch.aggregate()
-                metric_nroi = metric_batch[0].item()
-                metric_values_nroi.append(metric_nroi)
-                metric_froi = metric_batch[1].item()
-                metric_values_froi.append(metric_froi)
-                # metric_et = metric_batch[2].item()
-                # metric_values_et.append(metric_et)
+                metric_N = metric_batch[0].item()
+                metric_values_N.append(metric_N)
+                metric_E = metric_batch[1].item()
+                metric_values_E.append(metric_E)
+                metric_TA = metric_batch[2].item()
+                metric_values_TA.append(metric_TA)
+                
                 wandb.log(
                     {
-                        "Nroi_dice": metric_nroi,
-                        "Froi_dice": metric_froi,
-                        # "Edema_dice": metric_et,
+                        "N_dice": metric_N,
+                        "E_dice": metric_E,
+                        "TA_dice": metric_TA,
+                        "average_dice": metric,
                     }
                 )
                 dice_metric.reset()
@@ -396,7 +398,7 @@ def main(config_train):
                     print("saved new best metric model")
                 print(
                     f"current epoch: {epoch + 1} current mean dice: {metric:.4f}"
-                    f" Nroi: {metric_nroi:.4f} Froi: {metric_froi:.4f}"  # Edema: {metric_et:.4f}"
+                    f" N: {metric_N:.4f} E: {metric_E:.4f} TA: {metric_TA:.4f}"
                     f"\n best mean dice: {best_metric:.4f}"
                     f" at epoch: {best_metric_epoch}"
                 )
