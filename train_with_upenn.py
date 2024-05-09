@@ -167,7 +167,7 @@ config_train = SimpleNamespace(
     init_filters=16,
     dropout_prob=0.2,
     # training hyperparameters
-    max_epochs=100,
+    max_epochs=200,
     lrate=1e-4,
     weight_decay=1e-5,
     batch_size=1,
