@@ -1,0 +1,20 @@
+INFO:root:----------
+INFO:root:epoch 1/200
+Traceback (most recent call last):
+  File "/home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/train_with_upenn.py", line 423, in <module>
+    main(config_train)
+  File "/home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/train_with_upenn.py", line 318, in main
+    scaler.scale(loss).backward()
+  File "/home/psalmon/.local/lib/python3.10/site-packages/torch/_tensor.py", line 513, in backward
+    return handle_torch_function(
+  File "/home/psalmon/.local/lib/python3.10/site-packages/torch/overrides.py", line 1621, in handle_torch_function
+    result = torch_func_method(public_api, types, args, kwargs)
+  File "/home/psalmon/.local/lib/python3.10/site-packages/monai/data/meta_tensor.py", line 276, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/psalmon/.local/lib/python3.10/site-packages/torch/_tensor.py", line 1418, in __torch_function__
+    ret = func(*args, **kwargs)
+  File "/home/psalmon/.local/lib/python3.10/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/psalmon/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

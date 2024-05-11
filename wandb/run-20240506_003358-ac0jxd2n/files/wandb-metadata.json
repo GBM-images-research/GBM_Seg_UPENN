@@ -1,0 +1,128 @@
+{
+    "os": "Linux-6.2.16-19-pve-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-05-06T00:33:58.789937",
+    "startedAt": "2024-05-06T00:33:58.251287",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/train_with_upenn.py",
+    "codePathLocal": "train_with_upenn.py",
+    "codePath": "train_with_upenn.py",
+    "git": {
+        "remote": "https://github.com/GBM-images-research/GBM_Seg_UPENN.git",
+        "commit": "6207723689476bd70e213ec70097adc0ae3a3198"
+    },
+    "email": null,
+    "root": "/home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN",
+    "host": "pf24a-segmentacion-automatica-gliobastoma",
+    "username": "psalmon",
+    "executable": "/home/psalmon/SegResNet-UPENN/.venv/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 4204.9660625,
+        "min": 2200.0,
+        "max": 3800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3764.549,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4113.316,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4714.788,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4714.876,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3778.632,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4717.698,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3773.273,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3733.667,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4010.569,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4465.594,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4282.648,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4667.327,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4079.61,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4201.585,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3737.194,
+            "min": 2200.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3737.396,
+            "min": 2200.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 200.0,
+            "used": 33.3182373046875
+        }
+    },
+    "gpu": "Quadro RTX 8000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Quadro RTX 8000",
+            "memory_total": 51539607552
+        }
+    ],
+    "memory": {
+        "total": 16.0
+    }
+}

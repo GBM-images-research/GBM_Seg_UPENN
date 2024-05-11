@@ -125,12 +125,12 @@ t_transform = Compose(
         RandSpatialCropd(keys=["image", "label"], roi_size=[224, 224, 144], random_size=False),  #[224, 224, 144]
 
         #Data agumentation
-        RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=0),
-        RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=1),
-        RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=2),
+        #RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=0),
+        #RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=1),
+        #RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=2),
         NormalizeIntensityd(keys="image", nonzero=True, channel_wise=True),
-        RandScaleIntensityd(keys="image", factors=0.1, prob=1.0),
-        RandShiftIntensityd(keys="image", offsets=0.1, prob=1.0),
+        #RandScaleIntensityd(keys="image", factors=0.1, prob=1.0),
+        #RandShiftIntensityd(keys="image", offsets=0.1, prob=1.0),
 
     ]
 )
@@ -307,7 +307,7 @@ def main(config_train):
                 batch_data["image"].to(device),
                 batch_data["label"].to(device),
             )
-            print("Shape Inputs: ", inputs.shape)
+            
             optimizer.zero_grad()
 
             if config_train.use_scaler:
