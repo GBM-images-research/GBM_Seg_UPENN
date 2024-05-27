@@ -1,0 +1,555 @@
+2024-05-15 01:21:16,828 INFO    StreamThr :43975 [internal.py:wandb_internal():86] W&B internal server running at pid: 43975, started at: 2024-05-15 01:21:16.827932
+2024-05-15 01:21:16,829 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status
+2024-05-15 01:21:16,855 INFO    WriterThread:43975 [datastore.py:open_for_write():85] open: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/run-3jw8fzt2.wandb
+2024-05-15 01:21:16,855 DEBUG   SenderThread:43975 [sender.py:send():379] send: header
+2024-05-15 01:21:16,943 DEBUG   SenderThread:43975 [sender.py:send():379] send: run
+2024-05-15 01:21:17,445 INFO    SenderThread:43975 [dir_watcher.py:__init__():211] watching files in: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files
+2024-05-15 01:21:17,445 INFO    SenderThread:43975 [sender.py:_start_run_threads():1121] run started: 3jw8fzt2 with start time 1715736076.852755
+2024-05-15 01:21:17,447 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: check_version
+2024-05-15 01:21:17,447 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: check_version
+2024-05-15 01:21:17,697 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: run_start
+2024-05-15 01:21:17,775 DEBUG   HandlerThread:43975 [system_info.py:__init__():32] System info init
+2024-05-15 01:21:17,775 DEBUG   HandlerThread:43975 [system_info.py:__init__():47] System info init done
+2024-05-15 01:21:17,776 INFO    HandlerThread:43975 [system_monitor.py:start():181] Starting system monitor
+2024-05-15 01:21:17,776 INFO    SystemMonitor:43975 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-05-15 01:21:17,776 INFO    HandlerThread:43975 [system_monitor.py:probe():201] Collecting system info
+2024-05-15 01:21:17,777 INFO    SystemMonitor:43975 [interfaces.py:start():190] Started cpu monitoring
+2024-05-15 01:21:17,777 INFO    SystemMonitor:43975 [interfaces.py:start():190] Started disk monitoring
+2024-05-15 01:21:17,777 INFO    SystemMonitor:43975 [interfaces.py:start():190] Started gpu monitoring
+2024-05-15 01:21:17,778 INFO    SystemMonitor:43975 [interfaces.py:start():190] Started memory monitoring
+2024-05-15 01:21:17,780 INFO    SystemMonitor:43975 [interfaces.py:start():190] Started network monitoring
+2024-05-15 01:21:17,817 DEBUG   HandlerThread:43975 [system_info.py:probe():196] Probing system
+2024-05-15 01:21:17,818 DEBUG   HandlerThread:43975 [system_info.py:_probe_git():181] Probing git
+2024-05-15 01:21:17,822 DEBUG   HandlerThread:43975 [system_info.py:_probe_git():189] Probing git done
+2024-05-15 01:21:17,822 DEBUG   HandlerThread:43975 [system_info.py:probe():244] Probing system done
+2024-05-15 01:21:17,822 DEBUG   HandlerThread:43975 [system_monitor.py:probe():210] {'os': 'Linux-6.2.16-19-pve-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-05-15T01:21:17.817130', 'startedAt': '2024-05-15T01:21:16.824067', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/train_with_upenn.py', 'codePathLocal': 'train_with_upenn.py', 'codePath': 'train_with_upenn.py', 'git': {'remote': 'https://github.com/GBM-images-research/GBM_Seg_UPENN.git', 'commit': '19619c63a94650773a4eb2a5f5af7345d1c519c9'}, 'email': None, 'root': '/home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN', 'host': 'pf24a-segmentacion-automatica-gliobastoma', 'username': 'psalmon', 'executable': '/home/psalmon/SegResNet-UPENN/.venv/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 4352.083625, 'min': 2200.0, 'max': 3800.0}, 'cpu_freq_per_core': [{'current': 3601.964, 'min': 2200.0, 'max': 3800.0}, {'current': 4490.373, 'min': 2200.0, 'max': 3800.0}, {'current': 4487.929, 'min': 2200.0, 'max': 3800.0}, {'current': 3597.64, 'min': 2200.0, 'max': 3800.0}, {'current': 4489.227, 'min': 2200.0, 'max': 3800.0}, {'current': 4490.362, 'min': 2200.0, 'max': 3800.0}, {'current': 4478.943, 'min': 2200.0, 'max': 3800.0}, {'current': 3770.071, 'min': 2200.0, 'max': 3800.0}, {'current': 3604.293, 'min': 2200.0, 'max': 3800.0}, {'current': 4506.665, 'min': 2200.0, 'max': 3800.0}, {'current': 4490.379, 'min': 2200.0, 'max': 3800.0}, {'current': 4430.374, 'min': 2200.0, 'max': 3800.0}, {'current': 4491.593, 'min': 2200.0, 'max': 3800.0}, {'current': 4490.252, 'min': 2200.0, 'max': 3800.0}, {'current': 4491.58, 'min': 2200.0, 'max': 3800.0}, {'current': 3592.863, 'min': 2200.0, 'max': 3800.0}], 'disk': {'/': {'total': 200.0, 'used': 33.4139404296875}}, 'gpu': 'Quadro RTX 8000', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro RTX 8000', 'memory_total': 51539607552}], 'memory': {'total': 16.0}}
+2024-05-15 01:21:17,822 INFO    HandlerThread:43975 [system_monitor.py:probe():211] Finished collecting system info
+2024-05-15 01:21:17,822 INFO    HandlerThread:43975 [system_monitor.py:probe():214] Publishing system info
+2024-05-15 01:21:17,822 DEBUG   HandlerThread:43975 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-05-15 01:21:17,823 DEBUG   HandlerThread:43975 [system_info.py:_save_pip():68] Saving pip packages done
+2024-05-15 01:21:17,823 INFO    HandlerThread:43975 [system_monitor.py:probe():216] Finished publishing system info
+2024-05-15 01:21:17,862 DEBUG   SenderThread:43975 [sender.py:send():379] send: files
+2024-05-15 01:21:17,863 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2024-05-15 01:21:17,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:21:17,866 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:21:17,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:21:18,146 DEBUG   SenderThread:43975 [sender.py:send():379] send: telemetry
+2024-05-15 01:21:18,446 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_created():271] file/dir created: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/requirements.txt
+2024-05-15 01:21:18,446 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_created():271] file/dir created: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-metadata.json
+2024-05-15 01:21:18,691 INFO    wandb-upload_0:43975 [upload_job.py:push():131] Uploaded file /tmp/tmpzwfhe9hawandb/uw7md8a0-wandb-metadata.json
+2024-05-15 01:21:22,446 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_created():271] file/dir created: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:22,778 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:24,447 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:27,779 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:32,780 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:32,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:21:32,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:21:32,866 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:21:38,132 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:40,998 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:40,999 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:40,999 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:41,000 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:41,451 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_created():271] file/dir created: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:42,451 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:43,250 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:43,251 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:43,251 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:43,251 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:43,252 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:43,451 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:44,451 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:45,539 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:45,539 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:45,540 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:45,541 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:46,452 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:47,829 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:47,829 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:47,829 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:47,830 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:47,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:21:47,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:21:47,866 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:21:48,453 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:48,453 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:49,099 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:49,453 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/config.yaml
+2024-05-15 01:21:50,134 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:50,134 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:50,135 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:50,135 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:50,454 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:50,454 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:52,454 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:52,579 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:52,579 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:52,579 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:52,579 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:53,454 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:54,455 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:54,580 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:54,941 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:54,942 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:54,942 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:54,942 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:55,455 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:56,455 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:21:57,348 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:57,349 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:57,349 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:57,349 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:21:57,456 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:21:59,694 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:21:59,694 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:21:59,695 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:21:59,695 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:21:59,695 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:00,457 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:00,457 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:01,997 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:01,997 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:01,997 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:01,998 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:02,457 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:02,457 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:02,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:22:02,866 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:22:02,868 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:22:04,342 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:04,342 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:04,343 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:04,343 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:04,458 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:04,458 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:05,343 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:06,080 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:06,080 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:06,080 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:06,080 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:06,458 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:06,458 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:08,458 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:08,459 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:08,459 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:08,459 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:08,459 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:08,460 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:10,406 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:10,406 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:10,406 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:10,406 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:10,407 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:10,460 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:10,460 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:12,461 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:12,549 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:12,549 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:12,549 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:12,550 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:13,461 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:14,461 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:14,855 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:14,855 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:14,855 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:14,856 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:15,461 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:15,856 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:16,462 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:17,304 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:17,304 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:17,304 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:17,305 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:17,462 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:17,781 DEBUG   SystemMonitor:43975 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-05-15 01:22:17,781 DEBUG   SenderThread:43975 [sender.py:send():379] send: stats
+2024-05-15 01:22:17,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:22:17,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:22:17,867 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:22:19,706 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:19,706 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:19,707 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:19,707 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:20,463 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:20,463 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:21,707 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:21,937 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:21,938 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:21,938 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:21,938 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:22,463 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:22,464 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:24,138 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:24,139 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:24,139 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:24,139 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:24,465 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:24,465 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:26,410 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:26,411 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:26,411 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:26,411 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:26,465 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:26,465 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:27,411 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:28,466 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:28,739 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:28,740 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:28,740 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:28,740 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:29,466 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:30,466 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:31,037 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:31,038 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:31,038 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:31,038 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:31,467 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:32,467 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:32,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:22:32,866 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:22:32,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:22:33,102 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:33,366 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:33,367 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:33,367 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:33,367 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:33,467 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:35,643 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:35,644 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:35,644 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:35,644 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:36,468 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:36,468 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:37,976 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:37,977 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:37,977 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:37,977 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:38,469 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:38,469 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:38,977 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:40,288 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:40,289 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:40,289 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:40,289 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:40,469 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:40,469 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:42,470 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:42,626 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:42,626 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:42,627 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:42,627 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:43,470 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:44,470 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:44,627 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:44,920 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:44,921 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:44,921 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:44,921 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:45,471 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:46,471 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:47,278 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:47,279 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:47,279 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:47,279 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:47,471 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:47,782 DEBUG   SenderThread:43975 [sender.py:send():379] send: stats
+2024-05-15 01:22:47,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:22:47,866 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:22:47,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:22:48,472 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:49,634 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:49,674 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:49,674 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:49,675 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:49,675 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:50,472 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:51,911 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:51,911 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:51,911 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:51,911 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:52,473 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:52,473 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:54,234 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:54,235 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:54,235 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:54,235 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:54,473 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:54,474 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:55,235 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:22:56,474 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:56,496 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:56,496 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:56,497 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:56,497 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:57,474 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:22:58,475 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:22:58,718 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:22:58,718 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:22:58,718 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:22:58,719 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:22:59,475 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:00,475 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:00,719 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:01,027 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:01,028 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:01,028 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:01,028 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:01,475 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:02,476 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:02,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:23:02,867 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:23:02,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:23:03,522 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:03,523 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:03,523 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:03,523 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:04,476 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:05,795 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:05,796 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:05,796 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:05,796 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:05,796 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:06,477 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:06,477 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:08,064 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:08,064 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:08,064 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:08,065 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:08,478 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:08,478 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:10,324 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:10,325 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:10,325 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:10,325 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:10,478 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:10,479 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:11,326 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:12,479 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:12,713 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:12,713 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:12,714 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:12,714 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:13,479 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:14,479 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:15,087 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:15,087 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:15,087 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:15,088 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:15,480 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:16,480 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:17,088 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:17,527 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:17,528 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:17,528 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:17,528 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:17,782 DEBUG   SenderThread:43975 [sender.py:send():379] send: stats
+2024-05-15 01:23:17,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:23:17,867 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:23:17,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:23:18,481 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:19,978 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:19,978 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:19,979 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:19,979 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:20,481 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:20,482 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:22,238 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:22,238 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:22,238 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:22,238 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:22,239 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:22,482 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:22,482 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:24,483 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:24,523 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:24,523 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:24,523 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:24,524 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:25,483 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:26,483 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:26,796 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:26,796 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:26,796 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:26,796 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:27,484 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:27,797 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:28,484 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:29,265 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:29,265 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:29,265 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:29,265 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:29,484 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:30,485 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:31,699 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:31,700 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:31,700 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:31,701 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:32,485 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:32,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:23:32,867 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:23:32,869 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:23:33,055 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:34,198 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:34,198 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:34,199 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:34,199 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:34,486 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:34,486 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:36,486 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:36,790 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:36,791 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:36,791 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:36,791 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:37,487 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:38,487 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:38,792 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:39,104 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:39,104 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:39,104 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:39,105 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:39,487 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:40,487 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:41,353 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:41,354 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:41,354 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:41,354 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:41,488 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:42,488 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:43,670 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:43,671 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:43,671 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:43,671 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:44,489 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:44,671 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:46,028 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:46,029 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:46,029 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:46,029 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:46,489 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:46,490 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:47,783 DEBUG   SenderThread:43975 [sender.py:send():379] send: stats
+2024-05-15 01:23:47,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:23:47,867 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:23:47,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:23:48,362 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:48,363 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:48,363 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:48,363 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:48,490 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:48,490 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:50,363 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:50,494 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:50,503 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:50,503 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:50,503 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:50,503 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:51,495 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:52,308 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:52,309 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:52,309 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:52,309 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:52,495 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:52,495 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:54,496 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:54,496 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:54,496 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:54,497 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:54,497 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:55,496 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:55,497 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:23:56,496 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:56,741 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:56,741 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:56,741 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:56,741 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:57,496 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:23:58,497 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:23:58,912 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:23:58,913 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:23:58,913 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:23:58,913 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:23:59,497 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:00,497 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:00,907 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:00,907 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:24:00,908 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:00,908 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:00,908 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:01,498 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:02,498 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:02,866 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:24:02,867 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:24:02,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:24:03,002 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:03,061 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:03,061 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:03,061 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:03,498 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:04,498 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:05,290 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:05,290 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:05,290 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:05,291 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:05,499 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:06,291 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:24:06,499 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:07,498 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:07,498 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:07,499 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:07,499 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:07,499 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:09,800 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:09,801 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:09,801 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:09,801 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:10,500 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:10,500 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:11,802 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:24:12,090 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:12,091 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:12,091 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:12,091 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:12,501 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:12,501 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:14,317 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:14,318 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:14,318 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:14,318 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:14,501 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:14,502 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:16,502 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:16,744 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:16,744 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:16,744 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:16,744 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:17,503 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:17,745 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:24:17,783 DEBUG   SenderThread:43975 [sender.py:send():379] send: stats
+2024-05-15 01:24:17,867 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-15 01:24:17,867 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: stop_status
+2024-05-15 01:24:17,868 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: internal_messages
+2024-05-15 01:24:18,503 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:18,970 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:18,970 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:18,971 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:18,971 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:19,503 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:20,504 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:21,247 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:21,247 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:21,247 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:21,247 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:21,504 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:22,504 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:23,248 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: status_report
+2024-05-15 01:24:23,372 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:23,373 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:23,373 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:23,373 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:23,505 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
+2024-05-15 01:24:24,505 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/output.log
+2024-05-15 01:24:25,599 DEBUG   HandlerThread:43975 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-15 01:24:25,599 DEBUG   SenderThread:43975 [sender.py:send():379] send: history
+2024-05-15 01:24:25,599 DEBUG   SenderThread:43975 [sender.py:send_request():406] send_request: summary_record
+2024-05-15 01:24:25,599 INFO    SenderThread:43975 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-05-15 01:24:26,505 INFO    Thread-12 :43975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/psalmon/SegResNet-UPENN/GBM_Seg_UPENN/wandb/run-20240515_012116-3jw8fzt2/files/wandb-summary.json
